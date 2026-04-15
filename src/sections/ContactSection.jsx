@@ -67,7 +67,7 @@ const ContactSection = () => {
               </div>
               <h4 className="font-bold text-white text-xl mb-2">{t('contact_ui.email_title')}</h4>
               <p className="text-white/60 mb-4 font-light leading-relaxed">{t('contact_ui.email_desc')}</p>
-              <a href="mailto:export@terralatitude.com" className="text-secondary-fixed font-bold hover:underline">export@terralatitude.com</a>
+              <a href="mailto:svetlana.fediaeva@terralatitude.com" className="text-secondary-fixed font-bold hover:underline">svetlana.fediaeva@terralatitude.com</a>
             </div>
 
             <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-[#25D366]/30 transition-all group">
