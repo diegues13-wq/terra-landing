@@ -37,7 +37,7 @@ const Footer = () => {
               <span className="material-symbols-outlined text-[18px]">mail</span>
             </a>
             <a
-              href="https://wa.me/593999999999"
+              href="https://wa.me/79168383998"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"

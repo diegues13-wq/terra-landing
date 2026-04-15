@@ -77,7 +77,7 @@ const ContactSection = () => {
               <h4 className="font-bold text-white text-xl mb-2">{t('contact_ui.wa_title')}</h4>
               <p className="text-white/60 mb-6 font-light leading-relaxed">{t('contact_ui.wa_desc')}</p>
               <a
-                href="https://wa.me/593999999999"
+                href="https://wa.me/79168383998"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-all"
