@@ -30,7 +30,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="mailto:svetlana.fediaeva@terralatitude.com"
+              href="mailto:info@terralatitude.com"
               aria-label="Email"
               className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-secondary-fixed hover:text-black hover:border-secondary-fixed transition-all"
             >
@@ -90,7 +90,7 @@ const Footer = () => {
           <p className="font-light text-white/50 whitespace-pre-line mb-6 leading-relaxed">
             {t('footer.hq_address').replace('|', '\n')}
           </p>
-          <a href="mailto:svetlana.fediaeva@terralatitude.com" className="font-bold text-secondary-fixed hover:text-white transition-colors">svetlana.fediaeva@terralatitude.com</a>
+          <a href="mailto:info@terralatitude.com" className="font-bold text-secondary-fixed hover:text-white transition-colors">info@terralatitude.com</a>
         </div>
       </div>
 
