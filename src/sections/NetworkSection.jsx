@@ -55,10 +55,10 @@ const NetworkSection = () => {
       </div>
 
       {/* Layout split */}
-      <div className="flex flex-col lg:flex-row w-full h-full">
+      <div className="flex flex-col lg:flex-row w-full lg:h-full">
 
         {/* PROVEEDORES */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-5 lg:px-12 xl:px-16 py-4 lg:py-12 relative h-1/2 lg:h-full overflow-y-auto lg:overflow-hidden">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-5 lg:px-12 xl:px-16 py-6 lg:py-12 relative min-h-[70vh] lg:h-full overflow-y-auto lg:overflow-hidden">
           <div className="inline-flex items-center gap-2 mb-2 self-start mt-2 lg:mt-0">
             <div className="w-2 h-2 rounded-full bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.8)]"></div>
             <span className="font-label text-amber-500/80 tracking-[0.3em] uppercase text-[10px] md:text-xs font-bold">{t('network.badge_supplier')}</span>
@@ -92,7 +92,7 @@ const NetworkSection = () => {
         </div>
 
         {/* COMPRADORES */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 lg:px-12 xl:px-16 py-6 lg:py-12 relative h-1/2 lg:h-full border-t lg:border-t-0 lg:border-l border-white/5 overflow-y-auto lg:overflow-hidden">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 lg:px-12 xl:px-16 py-6 lg:py-12 relative min-h-[70vh] lg:h-full border-t lg:border-t-0 lg:border-l border-white/5 overflow-y-auto lg:overflow-hidden">
           <div className="inline-flex items-center gap-2 mb-3 self-start">
             <div className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]"></div>
             <span className="font-label text-emerald-400/80 tracking-[0.3em] uppercase text-xs md:text-sm font-bold">{t('network.badge_buyer')}</span>

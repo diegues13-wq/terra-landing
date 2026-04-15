@@ -12,7 +12,7 @@ const LogisticsSection = () => {
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-[100px] pointer-events-none"></div>
       <div className="absolute inset-0 blueprint-pattern opacity-[0.03]"></div>
 
-      <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 relative z-10 flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 relative z-10 flex flex-col justify-center w-full lg:h-full py-6 lg:py-0">
 
         <motion.div
           initial={{ opacity: 0, y: 24 }}

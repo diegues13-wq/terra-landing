@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <footer className="snap-section bg-[#050505] text-white/60 border-t border-white/5 font-body text-sm relative overflow-hidden justify-start">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-6 md:px-12 py-16 md:py-24 w-full max-w-screen-2xl mx-auto relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 px-6 md:px-12 py-10 md:py-24 w-full max-w-screen-2xl mx-auto relative z-10">
 
         {/* Identidad Corporativa */}
         <div className="col-span-1 md:col-span-1 flex flex-col items-start">

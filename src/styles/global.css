@@ -69,3 +69,19 @@
     border-left: 1px solid;
   }
 }
+
+/* ── Responsive: pantallas verticales (teléfonos < 768px) ── */
+@media (max-width: 767px) {
+  /* Desactivar scroll snap: en móvil se usa scroll natural continuo */
+  .snap-container {
+    scroll-snap-type: none;
+  }
+
+  /* Cada sección crece con su contenido en lugar de fijarse en 100dvh.
+     min-height: 100svh garantiza que secciones cortas sigan llenando la pantalla.
+     overflow se mantiene en hidden para recortar decoraciones absolutas. */
+  .snap-section {
+    height: auto;
+    min-height: 100svh;
+  }
+}

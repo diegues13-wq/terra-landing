@@ -39,7 +39,7 @@ const AtlasSection = () => {
         <h2 className="font-headline text-4xl md:text-5xl font-bold text-surface-bright tracking-tight mb-2">{t('products.title')}</h2>
       </motion.div>
 
-      <div className="flex flex-col lg:grid lg:grid-cols-12 w-full flex-1 bg-black/40 backdrop-blur-md relative z-10" style={{ minHeight: 0 }}>
+      <div className="flex flex-col lg:grid lg:grid-cols-12 w-full lg:flex-1 lg:min-h-0 bg-black/40 backdrop-blur-md relative z-10">
 
         {/* MAPA CARTOGRÁFICO */}
         <div className="flex lg:col-span-4 relative bg-black overflow-hidden flex-col items-center justify-center h-[220px] lg:h-full shrink-0">
@@ -93,7 +93,7 @@ const AtlasSection = () => {
         </div>
 
         {/* PANEL DE DETALLES */}
-        <div className="col-span-1 lg:col-span-8 flex flex-col items-start justify-center p-3 md:p-5 lg:p-8 flex-1 w-full gap-3 relative bg-gradient-to-l from-[#050505] to-[#0a0a0a] border-t lg:border-t-0 lg:border-l border-white/5 overflow-y-auto lg:overflow-hidden">
+        <div className="col-span-1 lg:col-span-8 flex flex-col items-start justify-center p-3 md:p-5 lg:p-8 lg:flex-1 w-full gap-3 relative bg-gradient-to-l from-[#050505] to-[#0a0a0a] border-t lg:border-t-0 lg:border-l border-white/5 overflow-y-auto lg:overflow-hidden">
 
           <div className="mb-3 w-full">
             <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-2 border-b border-white/10 pb-3">

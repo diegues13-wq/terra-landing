@@ -57,12 +57,12 @@ const ContactSection = () => {
           <p className="font-body text-sm md:text-base text-white/60 font-light max-w-2xl mx-auto">{t('contact.desc')}</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-10 gap-12 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 lg:gap-20 items-start">
 
           {/* Canales */}
           <div className="lg:col-span-4 flex flex-col gap-6">
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-secondary-fixed/30 transition-all group">
-              <div className="w-14 h-14 rounded-full bg-secondary-fixed/20 flex items-center justify-center mb-6 text-secondary-fixed group-hover:scale-110 transition-transform">
+            <div className="bg-white/5 border border-white/10 rounded-3xl p-5 md:p-8 hover:bg-white/10 hover:border-secondary-fixed/30 transition-all group">
+              <div className="w-14 h-14 rounded-full bg-secondary-fixed/20 flex items-center justify-center mb-4 md:mb-6 text-secondary-fixed group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-2xl">mail</span>
               </div>
               <h4 className="font-bold text-white text-xl mb-2">{t('contact_ui.email_title')}</h4>
@@ -70,17 +70,17 @@ const ContactSection = () => {
               <a href="mailto:svetlana.fediaeva@terralatitude.com" className="text-secondary-fixed font-bold hover:underline">svetlana.fediaeva@terralatitude.com</a>
             </div>
 
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-[#25D366]/30 transition-all group">
-              <div className="w-14 h-14 rounded-full bg-[#25D366]/20 flex items-center justify-center mb-6 text-[#25D366] group-hover:scale-110 transition-transform">
+            <div className="bg-white/5 border border-white/10 rounded-3xl p-5 md:p-8 hover:bg-white/10 hover:border-[#25D366]/30 transition-all group">
+              <div className="w-14 h-14 rounded-full bg-[#25D366]/20 flex items-center justify-center mb-4 md:mb-6 text-[#25D366] group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-2xl animate-pulse">sms</span>
               </div>
               <h4 className="font-bold text-white text-xl mb-2">{t('contact_ui.wa_title')}</h4>
-              <p className="text-white/60 mb-6 font-light leading-relaxed">{t('contact_ui.wa_desc')}</p>
+              <p className="text-white/60 mb-4 md:mb-6 font-light leading-relaxed">{t('contact_ui.wa_desc')}</p>
               <a
                 href="https://wa.me/79168383998"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-all"
+                className="inline-flex items-center gap-2 bg-[#25D366] text-white px-5 py-3 md:px-8 md:py-4 rounded-full font-bold hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-all"
               >
                 {t('contact_ui.wa_cta')}
                 <span className="material-symbols-outlined text-lg">open_in_new</span>
@@ -89,7 +89,7 @@ const ContactSection = () => {
           </div>
 
           {/* Formulario */}
-          <div className="lg:col-span-6 bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 shadow-[0_0_50px_rgba(0,0,0,0.5)] backdrop-blur-xl">
+          <div className="lg:col-span-6 bg-white/5 border border-white/10 rounded-3xl p-5 md:p-12 shadow-[0_0_50px_rgba(0,0,0,0.5)] backdrop-blur-xl">
             <h3 className="font-headline text-xl md:text-2xl font-bold text-white mb-5">{t('contact_ui.form_title')}</h3>
 
             {status === 'success' ? (
@@ -98,9 +98,9 @@ const ContactSection = () => {
                 <p className="text-white font-bold text-lg">{t('contact_ui.form_success')}</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+              <form onSubmit={handleSubmit} className="space-y-3 md:space-y-6" noValidate>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
                   <div className="relative group">
                     <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-white/30 group-focus-within:text-secondary-fixed transition-colors pointer-events-none">person</span>
                     <input type="text" name="name" value={form.name} onChange={handleChange} placeholder={t('contact_ui.pl_name')} required className={inputClass} />
@@ -111,7 +111,7 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
                   <div className="relative group">
                     <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-white/30 group-focus-within:text-secondary-fixed transition-colors pointer-events-none">alternate_email</span>
                     <input type="email" name="email" value={form.email} onChange={handleChange} placeholder={t('contact_ui.pl_email')} required className={inputClass} />
